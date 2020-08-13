@@ -1,0 +1,17 @@
+form {
+  margin: 0px 10px;
+}
+
+.todoForm {
+  margin: 20px auto;
+}
+
+.todoInput {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.addButton {
+  margin: 10px;
+  width: 60px;
+}
