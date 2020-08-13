@@ -9,9 +9,39 @@ form {
 .todoInput {
   width: 300px;
   margin: 0 auto;
+  border: 1px solid #2f3843;
+  border-radius: 4px;
+  height: 30px;
+}
+
+input:focus,
+input:active,
+input:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
 }
 
 .addButton {
-  margin: 10px;
-  width: 60px;
+  margin: 10px 5px;
+  width: 35px;
+  border: 1px solid #2f3843;
+  border-radius: 4px;
+  height: 30px;
+  background-color: #3fdaf5;
+}
+
+button:focus,
+button:active,
+button:active:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.todoInput::placeholder {
+  font-size: 14px;
+  padding: 5px;
+}
+
+i {
+  color: #2f3843;
 }

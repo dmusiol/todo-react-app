@@ -8,11 +8,13 @@ export default function TodoForm() {
         <form>
           <input
             type="text"
-            placeHolder="Add new task"
+            placeHolder="Enter task name"
             autoFocus="on"
             className="todoInput"
           />
-          <input type="submit" value="Add" className="addButton" />
+          <button type="submit" className="addButton">
+            <i class="fas fa-plus"></i>
+          </button>
         </form>
       </div>
     </div>
