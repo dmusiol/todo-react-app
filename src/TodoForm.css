@@ -1,17 +1,30 @@
+.form {
+  margin: 10px auto;
+}
+
 form {
-  margin: 0px 10px;
+  margin: 20px auto 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .todoForm {
-  margin: 20px auto;
+  margin-bottom: 20px;
 }
 
 .todoInput {
-  width: 300px;
-  margin: 0 auto;
+  width: 320px;
   border: 1px solid #2f3843;
   border-radius: 4px;
   height: 30px;
+  background-color: #f6f9fa;
+}
+
+div.formResults {
+  display: flex;
+  flex-direction: row;
 }
 
 input:focus,
@@ -22,7 +35,6 @@ input:active:focus:not(:disabled):not(.disabled) {
 }
 
 .addButton {
-  margin: 10px 5px;
   width: 35px;
   border: 1px solid #2f3843;
   border-radius: 4px;

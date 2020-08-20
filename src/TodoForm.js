@@ -23,24 +23,22 @@ export default function TodoForm(props) {
   return (
     <div className="form">
       <div className="row todoForm">
-        <div className="col-12">
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Enter task name"
-              autoFocus="on"
-              className="todoInput"
-              onChange={displayList}
-              value={text}
-            />
-            <button type="submit" className="addButton">
-              <i className="fas fa-plus"></i>
-            </button>
-          </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Enter task name"
+            autoFocus="on"
+            className="todoInput"
+            onChange={displayList}
+            value={text}
+          />
+          <button type="submit" className="addButton">
+            <i className="fas fa-plus"></i>
+          </button>
+        </form>
       </div>
       <div className="formResults">
-        <TodoList items={items} />
+        <TodoList items={items} numItems={items.length} />
       </div>
     </div>
   );

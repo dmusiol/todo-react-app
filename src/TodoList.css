@@ -1,16 +1,28 @@
 div.todoList {
-  border: 1px solid white;
-  border-radius: 10px;
-  margin: 10px 20px;
+  margin: 10px 30px;
+  flex: 500px;
+  background-color: #2f3843;
+  border: 1px solid #f6f9fa;
+  border-radius: 8px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: #3fdaf4;
   text-align: left;
-  padding: 10px;
-  text-transform: uppercase;
+  padding: 15px 15px 5px 15px;
+
   margin-bottom: 0 !important;
+}
+
+span {
+  color: #f6f9fa;
+  font-weight: 500;
+}
+div.allDone {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .allDone p {
@@ -19,16 +31,23 @@ p {
   text-align: center;
   padding: 10px;
   text-transform: none;
+  width: 100%;
 }
 
 ul {
   list-style: none;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 5px auto !important;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 li {
-  color: white;
+  color: #f6f9fa;
   text-align: left;
-  padding: 5px 0;
+  flex: 20px;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px 0;
 }
