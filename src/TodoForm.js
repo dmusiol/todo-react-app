@@ -16,8 +16,10 @@ export default function TodoForm(props) {
       text: text,
       id: Date.now(),
     };
-    setItems(items.concat(newItem));
-    setText("");
+    if (newItem.text !== "") {
+      setItems(items.concat(newItem));
+      setText("");
+    }
   }
 
   return (

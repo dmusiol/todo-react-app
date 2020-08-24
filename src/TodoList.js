@@ -10,7 +10,10 @@ export default function TodoList(props) {
         </p>
         <ul>
           {props.items.map((item) => (
-            <li key={item.id}>{item.text}</li>
+            <li key={item.id}>
+              {item.text}
+              <i class="fas fa-times"></i>
+            </li>
           ))}
         </ul>
       </div>
