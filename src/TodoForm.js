@@ -4,23 +4,29 @@ import TodoList from "./TodoList";
 
 export default function TodoForm(props) {
   const [items, setItems] = useState([]);
-  const [text, setText] = useState("");
+  const [value, setValue] = useState("");
 
   function displayList(event) {
-    setText(event.target.value);
+    setValue(event.target.value);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    const newItem = {
-      text: text,
-      id: Date.now(),
-    };
-    if (newItem.text !== "") {
-      setItems(items.concat(newItem));
-      setText("");
-    }
+    if (!value) return;
+    addItems(value);
+    setValue("");
   }
+
+  const addItems = (text) => {
+    const newItems = [...items, { text }];
+    setItems(newItems);
+  };
+
+  const completeItems = (index) => {
+    const newItems = [...items];
+    newItems[index].isCompleted = true;
+    setItems(newItems);
+  };
 
   return (
     <div className="form">
@@ -32,7 +38,7 @@ export default function TodoForm(props) {
             autoFocus="on"
             className="todoInput"
             onChange={displayList}
-            value={text}
+            value={value}
           />
           <button type="submit" className="addButton">
             <i className="fas fa-plus"></i>
@@ -40,7 +46,11 @@ export default function TodoForm(props) {
         </form>
       </div>
       <div className="formResults">
-        <TodoList items={items} numItems={items.length} />
+        <TodoList
+          items={items}
+          numItems={items.length}
+          completeItems={completeItems}
+        />
       </div>
     </div>
   );

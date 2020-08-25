@@ -34,8 +34,7 @@ div.allDone {
   width: 100%;
 }
 
-ul {
-  list-style: none;
+div.allList {
   margin: 5px auto !important;
   padding: 0 15px;
   display: flex;
@@ -43,7 +42,7 @@ ul {
   justify-content: space-between;
 }
 
-li {
+div.task {
   color: #f6f9fa;
   text-align: left;
   flex: 20px;
@@ -52,9 +51,27 @@ li {
   margin: 5px 0;
 }
 
-li i {
+button {
+  background-color: inherit;
+  float: right;
+  border: 1px solid #2f3843;
+}
+
+button:focus,
+button:focus:not(:disabled):not(.disabled) {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+i.fas.fa-check {
   color: #f6f9fa;
   font-weight: 600;
   padding: 5px;
-  float: right;
+  font-size: 14px;
+}
+i.fas.fa-trash {
+  color: #3fdaf4;
+  font-weight: 600;
+  padding: 5px;
+  font-size: 14px;
 }
