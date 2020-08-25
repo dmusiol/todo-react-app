@@ -28,6 +28,12 @@ export default function TodoForm(props) {
     setItems(newItems);
   };
 
+  const removeItems = (index) => {
+    const newItems = [...items];
+    newItems.splice(index, 1);
+    setItems(newItems);
+  };
+
   return (
     <div className="form">
       <div className="row todoForm">
@@ -50,6 +56,7 @@ export default function TodoForm(props) {
           items={items}
           numItems={items.length}
           completeItems={completeItems}
+          removeItems={removeItems}
         />
       </div>
     </div>

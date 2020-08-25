@@ -9,17 +9,18 @@ export default function TodoList(props) {
           You have [ <span>{props.numItems}</span> ] tasks:
         </p>
         <div className="allList">
-          {props.items.map((item, index, completeItems) => (
+          {props.items.map((item, index, completeItems, removeItems) => (
             <div
               className="task"
               key={index}
               index={index}
               item={item}
               completeItems={completeItems}
+              removeItems={removeItems}
               style={{ textDecoration: item.isCompleted ? "line-through" : "" }}
             >
               {item.text}
-              <button>
+              <button onClick={() => props.removeItems(index)}>
                 <i class="fas fa-trash"></i>
               </button>
               <button onClick={() => props.completeItems(index)}>
