@@ -22,13 +22,13 @@ export default function TodoForm(props) {
     setItems(newItems);
   };
 
-  const completeItems = (index) => {
+  const complete = (index) => {
     const newItems = [...items];
     newItems[index].isCompleted = true;
     setItems(newItems);
   };
 
-  const removeItems = (index) => {
+  const remove = (index) => {
     const newItems = [...items];
     newItems.splice(index, 1);
     setItems(newItems);
@@ -55,8 +55,8 @@ export default function TodoForm(props) {
         <TodoList
           items={items}
           numItems={items.length}
-          completeItems={completeItems}
-          removeItems={removeItems}
+          completeItems={complete}
+          removeItems={remove}
         />
       </div>
     </div>

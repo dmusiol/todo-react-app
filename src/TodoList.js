@@ -15,16 +15,16 @@ export default function TodoList(props) {
               key={index}
               index={index}
               item={item}
-              completeItems={completeItems}
-              removeItems={removeItems}
+              complete={completeItems}
+              remove={removeItems}
               style={{ textDecoration: item.isCompleted ? "line-through" : "" }}
             >
               {item.text}
               <button onClick={() => props.removeItems(index)}>
-                <i class="fas fa-trash"></i>
+                <i className="fas fa-trash"></i>
               </button>
               <button onClick={() => props.completeItems(index)}>
-                <i class="fas fa-check"></i>
+                <i className="fas fa-check"></i>
               </button>
             </div>
           ))}
