@@ -1,17 +1,15 @@
 div.todoList {
-  margin: 10px 30px;
-  flex: 500px;
+  margin: 10px 20px;
+  width: 500px;
   background-color: #2f3843;
-  border: 1px solid #f6f9fa;
   border-radius: 8px;
 }
 
 p {
   font-size: 18px;
   color: #3fdaf4;
-  text-align: left;
-  padding: 15px 15px 5px 15px;
-
+  text-align: center;
+  padding: 10px 15px 15px 15px;
   margin-bottom: 0 !important;
 }
 
@@ -36,10 +34,11 @@ div.allDone {
 
 div.allList {
   margin: 5px auto !important;
-  padding: 0 15px;
+  padding: 0 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 400px;
 }
 
 div.task {
@@ -47,14 +46,22 @@ div.task {
   text-align: left;
   flex: 20px;
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   margin: 5px 0;
+  background-color: #1c2229;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  flex-wrap: wrap;
 }
 
+.task span {
+  align-self: center;
+  flex: 200px;
+}
 button {
   background-color: inherit;
-  float: right;
-  border: 1px solid #2f3843;
+  border: 1px solid #1c2229;
 }
 
 button:focus,

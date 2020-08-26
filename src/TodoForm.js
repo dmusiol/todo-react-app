@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./TodoForm.css";
 import TodoList from "./TodoList";
 
 export default function TodoForm(props) {
+  const [remaining, setRemainig] = useState(0);
   const [items, setItems] = useState([]);
   const [value, setValue] = useState("");
 
-  function displayList(event) {
-    setValue(event.target.value);
-  }
+  useEffect(() => {
+    setRemainig(items.filter((item) => !item.isCompleted).length);
+  }, [items]);
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
     if (!value) return;
     addItems(value);
     setValue("");
@@ -43,7 +44,7 @@ export default function TodoForm(props) {
             placeholder="Enter task name"
             autoFocus="on"
             className="todoInput"
-            onChange={displayList}
+            onChange={(e) => setValue(e.target.value)}
             value={value}
           />
           <button type="submit" className="addButton">
@@ -57,6 +58,7 @@ export default function TodoForm(props) {
           numItems={items.length}
           completeItems={complete}
           removeItems={remove}
+          remainingItems={remaining}
         />
       </div>
     </div>

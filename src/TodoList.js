@@ -6,7 +6,7 @@ export default function TodoList(props) {
     return (
       <div className="todoList">
         <p>
-          You have [ <span>{props.numItems}</span> ] tasks:
+          Pending tasks: [ <span>{props.remainingItems}</span> ]
         </p>
         <div className="allList">
           {props.items.map((item, index, completeItems, removeItems) => (
@@ -19,12 +19,12 @@ export default function TodoList(props) {
               remove={removeItems}
               style={{ textDecoration: item.isCompleted ? "line-through" : "" }}
             >
-              {item.text}
-              <button onClick={() => props.removeItems(index)}>
-                <i className="fas fa-trash"></i>
-              </button>
+              <span>{item.text}</span>
               <button onClick={() => props.completeItems(index)}>
                 <i className="fas fa-check"></i>
+              </button>
+              <button onClick={() => props.removeItems(index)}>
+                <i className="fas fa-trash"></i>
               </button>
             </div>
           ))}
