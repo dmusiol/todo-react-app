@@ -18,7 +18,7 @@ form {
   width: 320px;
   border: 1px solid #2f3843;
   border-radius: 4px;
-  height: 30px;
+  height: 35px;
   background-color: #f6f9fa;
 }
 
@@ -38,7 +38,7 @@ input:active:focus:not(:disabled):not(.disabled) {
   width: 35px;
   border: 1px solid #2f3843;
   border-radius: 4px;
-  height: 30px;
+  height: 35px;
   background-color: #3fdaf5;
 }
 

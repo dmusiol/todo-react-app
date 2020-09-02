@@ -3,10 +3,12 @@ div.todoList {
   width: 500px;
   background-color: #2f3843;
   border-radius: 8px;
+  overflow: auto;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
+
   color: #3fdaf4;
   text-align: center;
   padding: 10px 15px 15px 15px;
@@ -58,6 +60,9 @@ div.task {
 .task span {
   align-self: center;
   flex: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 button {
   background-color: inherit;
