@@ -3,7 +3,6 @@ div.todoList {
   width: 500px;
   background-color: #2f3843;
   border-radius: 8px;
-  overflow: auto;
 }
 
 p {
@@ -42,6 +41,8 @@ div.allList {
   flex-direction: column;
   justify-content: space-between;
   max-width: 400px;
+  max-height: 390px;
+  overflow: scroll;
 }
 
 div.task {
