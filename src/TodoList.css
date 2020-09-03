@@ -21,6 +21,7 @@ span {
 }
 div.allDone {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 }
@@ -86,4 +87,8 @@ i.fas.fa-trash {
   font-weight: 600;
   padding: 5px;
   font-size: 14px;
+}
+
+img {
+  margin: 10px auto;
 }

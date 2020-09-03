@@ -36,7 +36,15 @@ export default function TodoList(props) {
   } else {
     return (
       <div className="allDone">
-        <p>You've done everything. Great job!</p>
+        <img
+          src="/undraw_Beer_celebration_cefj (1).svg"
+          alt="allDone"
+          width="120px"
+        />
+        <p>
+          You've done everything. <br />
+          Great job!
+        </p>
       </div>
     );
   }
