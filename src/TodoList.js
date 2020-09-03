@@ -17,7 +17,9 @@ export default function TodoList(props) {
               item={item}
               complete={completeItems}
               remove={removeItems}
-              style={{ textDecoration: item.isCompleted ? "line-through" : "" }}
+              style={{
+                textDecoration: item.isCompleted ? "line-through #3FDAF4" : "",
+              }}
             >
               <span>{item.text}</span>
               <button onClick={() => props.completeItems(index)}>
