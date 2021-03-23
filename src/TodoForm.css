@@ -58,7 +58,7 @@ button:active:focus:not(:disabled):not(.disabled) {
 .todoInput::placeholder {
   font-size: 14px;
   color: #3f3d56;
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 i {

@@ -99,7 +99,7 @@ button:focus:not(:disabled):not(.disabled) {
 
 i.fas.fa-check {
   color: var(--primary-color);
-  opacity: 80%;
+  opacity: 0.8;
   font-weight: 600;
   padding: 5px;
   font-size: 14px;
