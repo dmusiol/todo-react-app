@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #5917d4;
+  --secondary-color: #e5d9fc;
+}
+
 .form {
   margin: 10px auto;
 }
@@ -16,9 +21,9 @@ form {
 
 .todoInput {
   width: 320px;
-  border: 1px solid #2f3843;
+  border: 1px solid #d8c7f8;
   border-radius: 4px;
-  height: 35px;
+  height: 36px;
   background-color: #f6f9fa;
   padding-left: 5px;
 }
@@ -37,10 +42,10 @@ input:active:focus:not(:disabled):not(.disabled) {
 
 .addButton {
   width: 35px;
-  border: 1px solid #2f3843;
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   height: 35px;
-  background-color: #3fdaf5;
+  background-color: var(--primary-color);
 }
 
 button:focus,
@@ -52,8 +57,10 @@ button:active:focus:not(:disabled):not(.disabled) {
 
 .todoInput::placeholder {
   font-size: 14px;
+  color: var(--primary-color);
+  opacity: 50%;
 }
 
 i {
-  color: #2f3843;
+  color: white;
 }

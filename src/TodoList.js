@@ -6,7 +6,7 @@ export default function TodoList(props) {
     return (
       <div className="todoList">
         <p>
-          Pending tasks: [ <span>{props.remainingItems}</span> ]
+          Pending tasks: [ <span id="remaining">{props.remainingItems}</span> ]
         </p>
         <div className="allList">
           {props.items.map((item, index, completeItems, removeItems) => (
@@ -18,7 +18,7 @@ export default function TodoList(props) {
               complete={completeItems}
               remove={removeItems}
               style={{
-                textDecoration: item.isCompleted ? "line-through #3FDAF4" : "",
+                textDecoration: item.isCompleted ? "line-through #5917d4" : "",
               }}
             >
               <span>{item.text}</span>
@@ -37,9 +37,9 @@ export default function TodoList(props) {
     return (
       <div className="allDone">
         <img
-          src="/undraw_Beer_celebration_cefj (1).svg"
+          src="/undraw_Beer_celebration_cefj.svg"
           alt="allDone"
-          width="120px"
+          width="140px"
         />
         <p>
           You've done everything. <br />

@@ -1,14 +1,19 @@
+:root {
+  --primary-color: #5917d4;
+  --secondary-color: #e5d9fc;
+}
+
 .container {
   display: block;
   margin: 50px auto;
 }
 
 .todoApp {
-  border: 1px solid #303743;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
   max-width: 500px;
   margin: 10px auto;
-  background-color: #303743;
+  background-color: var(--secondary-color);
   padding: 20px;
 }
 header {
@@ -19,11 +24,12 @@ header {
 h1 {
   margin: 0 auto;
   font-size: 35px !important;
+  font-weight: 600;
 }
 
 div.heading {
   margin: 0 auto;
   display: block;
-  color: #3fdaf5;
+  color: var(--primary-color);
   text-transform: uppercase;
 }
