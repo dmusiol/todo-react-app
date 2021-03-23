@@ -18,7 +18,7 @@ export default function TodoList(props) {
               complete={completeItems}
               remove={removeItems}
               style={{
-                textDecoration: item.isCompleted ? "line-through #5917d4" : "",
+                textDecoration: item.isCompleted ? "line-through 2px #5917d4" : "",
               }}
             >
               <span>{item.text}</span>
@@ -37,7 +37,7 @@ export default function TodoList(props) {
     return (
       <div className="allDone">
         <img
-          src="/undraw_Beer_celebration_cefj.svg"
+          src="/all-done_img.svg"
           alt="allDone"
           width="140px"
         />

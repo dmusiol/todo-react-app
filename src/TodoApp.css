@@ -1,6 +1,6 @@
 :root {
   --primary-color: #5917d4;
-  --secondary-color: #e5d9fc;
+  --secondary-color: #e9dffc;
 }
 
 .container {
@@ -25,6 +25,7 @@ h1 {
   margin: 0 auto;
   font-size: 35px !important;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 div.heading {

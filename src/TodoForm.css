@@ -1,6 +1,6 @@
 :root {
   --primary-color: #5917d4;
-  --secondary-color: #e5d9fc;
+  --secondary-color: #e9dffc;
 }
 
 .form {
@@ -21,7 +21,7 @@ form {
 
 .todoInput {
   width: 320px;
-  border: 1px solid #d8c7f8;
+  border: 1px solid #d2bef7;
   border-radius: 4px;
   height: 36px;
   background-color: #f6f9fa;
@@ -57,8 +57,8 @@ button:active:focus:not(:disabled):not(.disabled) {
 
 .todoInput::placeholder {
   font-size: 14px;
-  color: var(--primary-color);
-  opacity: 50%;
+  color: #3f3d56;
+  opacity: 60%;
 }
 
 i {
